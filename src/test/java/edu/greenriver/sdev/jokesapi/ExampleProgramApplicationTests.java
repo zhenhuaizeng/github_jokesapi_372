@@ -26,7 +26,7 @@ class JokesApiApplicationTests
     @Test
     public void contextLoads()
     {
-
+        System.out.println("123");
     }
 
     @Test
@@ -44,6 +44,7 @@ class JokesApiApplicationTests
         //test it!
         HttpStatusCode status = response.getStatusCode();
         Joke[] jokes = response.getBody();
+
 
         assertEquals(status, HttpStatus.OK);
         assertTrue(jokes.length >0);
